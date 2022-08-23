@@ -1,0 +1,3 @@
+nama : farid
+hoby : konseran
+umur : 18
