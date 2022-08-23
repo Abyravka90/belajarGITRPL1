@@ -1,0 +1,2 @@
+Nama = Agung Kuncoro 
+TTL = Jakarta,24 Desember 2004
