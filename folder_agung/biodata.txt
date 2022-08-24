@@ -1,2 +1,3 @@
-Nama = Agung Kuncoro 
-TTL = Jakarta,24 Desember 2004
+Nama : agung kuncoro 
+Nama Panggilan : agung 
+Tempat Tanggal Lahir :Jakarta, 24-12-2004
