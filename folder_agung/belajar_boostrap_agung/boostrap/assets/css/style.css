@@ -1,0 +1,32 @@
+@import body {
+    font-family: 'quicksand', sans-serif;
+}
+
+.bg-dark {
+    background: #e20f04!important;
+}
+
+.breadscrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #c905af;
+    border-radius: 0px!important;
+}
+
+.breadscrumb a {
+    color: rgb(32, 236, 13);
+}
+
+.breadscrumb-item+.breadscrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: rgb(231, 45, 12);
+    content: "/";
+}
+
+.breadscrumb-item.active {
+    color: rgb(16, 132, 233);
+}
