@@ -1,0 +1,11 @@
+header{
+    height: 40px;
+    background-color: blue;
+}
+.img-hero{
+    border-radius: 50%;
+}
+footer{
+    height: 50px;
+    background-color: blue;
+}
