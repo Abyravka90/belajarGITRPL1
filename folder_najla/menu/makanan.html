@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  </head>
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+      <a class="navbar-brand" href="#">Rimberio Cafe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Rimberio Cafe</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="menu.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Daftar Menu
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="minuman.html">Minuman</a></li>
+                <li><a class="dropdown-item" href="makanan.html">Makanan</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+      <!--carousel-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="best in town.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="best in town (2).png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="best in town (1).png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <h1 align="center"><i><u>Daftar Makanan</u></i></h1>
+      <br>
+      <!--card-->
+      <div class="row justify-content-around" align="justify">
+        <div class="card" style="width: 18rem;">
+          <img src="https://awsimages.detik.net.id/community/media/visual/2021/04/22/5-makanan-enak-dari-indonesia-dan-malaysia-yang-terkenal-enak-5.jpeg?w=700&q=90" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nasi Goreng</h5>
+            <p class="card-text">Nasi goreng adalah sebuah makanan berupa nasi yang digoreng dan diaduk dalam minyak goreng, margarin, atau mentega. Biasanya ditambah kecap manis, bawang merah, bawang putih, asam jawa, lada dan bumbu-bumbu lainnya; seperti telur, ayam, dan kerupuk.</p>
+            <a href="makanan.html" class="btn btn-primary">Pesan</a>
+          </div>
+        </div>
+  
+        <div class="card" style="width: 18rem;">
+          <img src="https://cdn-cas.orami.co.id/parenting/images/gado-gado-1.width-800.jpg" height="180px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Gado-Gado</h5>
+            <p class="card-text">Gado-gado adalah makanan khas Jakarta berisi sayur-sayuran yang direbus, irisan telur dan tahu, serta ditaburi bawang goreng dan kerupuk. Sayur-sayuran ditambahkan dengan bumbu kacang atau saus dari kacang tanah yang telah dihaluskan yang kemudian diaduk merata.</p>
+            <a href="makanan.html" class="btn btn-primary">Pesan</a>
+          </div>
+        </div>
+  
+        <div class="card" style="width: 18rem;">
+            <img src="https://sweetrip.id/wp-content/uploads/2020/09/loveresep_119040855_109408720821751_5041407659259127406_n-1024x1024.jpg" height="190px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ayam Bakar</h5>
+              <p class="card-text">Ayam bakar adalah sebuah hidangan Asia Tenggara Maritim, terutama hidangan Indonesia atau Malaysia, dari ayam yang dipanggang di atas arang.</p>
+              <a href="makanan.html" class="btn btn-primary">Pesan</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="https://blog.elevenia.co.id/wp-content/uploads/2018/05/cara-membuat-salad-buah1.jpg" height="190px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Salad Buah</h5>
+              <p class="card-text">Selada adalah jenis makanan yang terdiri dari campuran sayur-sayuran dan bahan-bahan makanan siap santap.</p>
+              <a href="makanan.html" class="btn btn-primary">Pesan</a>
+            </div>
+          </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
