@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM ANIMATION</title>
+    <style>
+        
+    #container {
+    width: 500px;
+    height: 500px;
+    background: rgb(235, 60, 60);
+    position: relative;
+    border-radius: 100px;
+    /* left: 315px;
+    position: absolute;
+    top: 143px; */
+    }
+
+    #circle {
+    width: 150px;
+    height: 150px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 100px;
+    /* transform: rotate(-120deg) translateY(-150px) rotate(120deg); */
+    }
+
+    </style>
+    </head>
+
+    <body>
+    <div id="container">
+        <div id="circle"></div>
+    </div>
+
+    <script>
+    window.onload = function() {
+        var pos = 0; 
+        var posTop = 0;
+        var posRight = 0;
+        var posBottom = 0;
+        //our box element
+        var box = document.getElementById('circle');
+        var t = setInterval(move, 5);
+        function move(){
+            if(pos < 350){
+                pos += 5
+                box.style.left = pos+'px';
+
+            }else if(pos >= 350 && posTop < 350)
+            {
+                posTop += 5
+                box.style.top = posTop+'px';
+
+            }else if(pos >= 350 && posTop <= 350 && posRight <= 340){
+                posRight += 5
+                box.style.left = (pos - posRight)+'px';
+
+            }else if(pos >= 350 && posBottom<=340){
+                posBottom += 5
+                box.style.top = (posTop - posBottom)+'px';
+                
+            }
+            // else{
+            //     // clearInterval();
+                
+            // }
+       setInterval(move, 900000)}
+        // function move() {
+        //     if(pos == 350) {
+        //         pos += 1;
+        //         box.style.left = pos+'px';
+        //     }
+        //     else if(pos >= 350){
+        //         clearInterval(t);
+        //     }   
+        //     else{
+        //         pos += 1;
+        //         box.style.top = pos+'px';
+        //     }
+        // }
+        // function move() {
+        //     if(pos >= 350) {
+        //         clearInterval(t);
+        //     }
+        //     else{
+        //         pos += 1;
+        //         box.style.left = pos+'px';
+        //     }
+        // }
+        // function move2() {
+        //     if(pos >= 350) {
+        //         clearInterval(t);
+        //     }
+        //     else{
+        //         pos += 1;
+        //         box.style.top = pos+'px';
+        //     }
+        // }
+    };
+
+    // if(pos >= 350) {
+    //             pos += 1;
+    //             box.style.top = pos+'px';
+    //         }
+    //         else {
+    //             pos += 1;
+    //             box.style.top = pos+'px';;
+    //         };   
+
+    
+   
+    </script>
+
+
+</body>
+</html>
