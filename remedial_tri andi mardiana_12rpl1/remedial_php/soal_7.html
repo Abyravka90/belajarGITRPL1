@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tahunlahir = 2005;
+        var blnlahir = 3;
+        var tgllahir = 5;
+        function harilahir(tahunlahir, blnlahir, tgllahir){
+            var hari = ['minggu', 'senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu'];
+            var d = new Date(tahunlahir, blnlahir, tgllahir);
+            var day = d.getDay();
+            console.log(day)
+            return hari[day]
+        }
+    </script>
+</body>
+</html>
