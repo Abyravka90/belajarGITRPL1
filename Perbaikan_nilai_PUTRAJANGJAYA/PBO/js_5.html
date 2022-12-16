@@ -1,0 +1,13 @@
+<script>
+  function Produk() {
+    this.idp = prompt("Masukkan id produk");
+    this.price = prompt("Masukkan harga");
+    this.disc = prompt("Masukkan besar diskon") / 100;
+    this.getHarga = function () {
+      var hargaBaru = this.price * this.disc;
+      alert(this.price - hargaBaru);
+    };
+  }
+  var nilai = new Produk();
+  nilai.getHarga();
+</script>
