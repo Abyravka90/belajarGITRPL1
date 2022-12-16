@@ -1,0 +1,9 @@
+<?php
+$name="name";
+$nik="nik";
+$jenis_kelamin="kelamin";
+$tempat_lahir="tempat";
+$tanggal_lahir="tanggal";
+$alamat="alamat";
+echo($name+$nik+$jenis_kelamin+$tempat_lahir+$tanggal_lahir+$alamat);
+<?
