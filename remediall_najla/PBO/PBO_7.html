@@ -1,0 +1,16 @@
+<script>
+
+    function getWeekDay(year, month, date){
+       var names = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+       var date = new Date (year, month, date);
+       var day = date.getDay()
+       return names[day]
+      }
+     
+      var y = prompt('masukan tahun lahir')
+      var m = prompt('masukan bulan lahir')
+      var d = prompt('masukan tanggal lahir')
+      var bDay = getWeekDay(y,(m-1),d)
+      console.log(bDay)
+   
+    </script>
