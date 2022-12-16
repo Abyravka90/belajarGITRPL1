@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menghitung Volume Tabung</title>
+</head>
+<body>
+	<form action="outputvolumetabung.php" method="post">
+		Jari-jari <input type="text" name="jari"> <br>
+		Tinggi <input type="text" name="tinggi"> <br>
+		<input type="submit" name="submit">
+	</form>
+	
+	<?php
+	
+	  if(isset($_POST['submit'])) {
+	    	$phi = 22/7;
+      	$jari = $_POST['jari'];
+      	$tinggi = $_POST['tinggi'];
+      	$volume = $phi * $jari * $jari * $tinggi;
+      
+      	echo("
+      	Phi = $phi <br />
+      	Jari-jari = $jari <br />
+      	Tinggi = $tinggi <br />
+      	Volume = $volume
+	");
+	  }
+	
+	?>
+	
+</body>
+</html>

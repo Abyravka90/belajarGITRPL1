@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+          width: 200px;
+          height: 200px;
+          background-color: green;
+          position: relative;
+        }
+        .box {
+          width: 50px;
+          height: 50px;
+          background-color: red;
+          position: absolute;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    <script>
+         var box = document.querySelector(".box");
+        var container = document.querySelector(".container");
+        var containerWidth = container.offsetWidth;
+        var containerHeight = container.offsetHeight;
+        var boxWidth = box.offsetWidth;
+        var boxHeight = box.offsetHeight;
+        var x = 0;
+        var y = 0;
+        var speed = 4;
+        var direction = "right";
+    
+        function animate() {
+            if (direction === "right") {
+            x += speed;
+            if (x + boxWidth >= containerWidth) {
+                direction = "down";
+            }
+            } else if (direction === "down") {
+            y += speed;
+            if (y + boxHeight >= containerHeight) {
+                direction = "left";
+            }
+            } else if (direction === "left") {
+            x -= speed;
+            if (x <= 0) {
+                direction = "up";
+            }
+            } else if (direction === "up") {
+            y -= speed;
+            if (y <= 0) {
+                direction = "right";
+            }
+            }
+            box.style.left = x + "px";
+            box.style.top = y + "px";
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+</body>
+</html>

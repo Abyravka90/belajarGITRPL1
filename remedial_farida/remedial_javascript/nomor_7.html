@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function getWeekDay(year, month, date){
+           var names = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+           var date = new Date (year, month, date);
+           var day = date.getDay()
+           return names[day]
+          }
+         
+          var y = prompt('masukan tahun lahir kamu')
+          var m = prompt('masukan bulan lahir kamu')
+          var d = prompt('masukan tanggal lahir kamu')
+          var bDay = getWeekDay(y,(m-1),d)
+          alert(bDay)
+       
+        </script>
+    
+</body>
+</html>
