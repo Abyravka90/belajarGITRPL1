@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animasi box</title>
+  </head>
+  <style>
+    #container {
+      width: 200px;
+      height: 200px;
+      background: green;
+      position: relative;
+    }
+    #box {
+      width: 50px;
+      height: 50px;
+      background: red;
+      position: absolute;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <div id="box"></div>
+    </div>
+
+    <script>
+      window.onload = function () {
+        var posTr = 0;
+        var posBr = 0;
+        var posBl = 0;
+        var posTl = 0;
+        var box = document.getElementById("box");
+        var t = setInterval(move, 10);
+
+        function move() {
+          if (posTr <= 150) {
+            posTr += 1;
+            box.style.left = posTr + "px";
+          } else if (posBr <= 150) {
+            posBr += 1;
+            box.style.top = posBr + "px";
+          } else if (posBl <= 150) {
+            posBl += 1;
+            box.style.left = posTr - posBl + "px";
+          } else if (posTl <= 150) {
+            posTl += 1;
+            box.style.top = posBr - posTl + "px";
+          } else {
+            posTr = 0;
+            posBr = 0;
+            posBl = 0;
+            posTl = 0;
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
