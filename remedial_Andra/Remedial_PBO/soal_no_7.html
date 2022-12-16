@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tahunLahir = 2004;
+        var blnLahir = 12;
+        var tglLahir =26;
+        
+        function hariLahir(tahunLahir, blnLahir, tglLahir){
+            var hari = ['minggu', 'senin', 'selasa', 'rabu', 'kamis', 'jumat','sabtu']
+            var d = new Date(tahunLahir, blnLahir, tglLahir);
+            var day = d.getDay();
+            document.write(day)
+            return hari (day)
+        }
+        var Dday = hariLahir(tahunLahir, blnLahir, tglLahir);
+        document.write()
+        alert('andra lahir hari:' +Dday)
+      </script>
+</body>
+</html>
