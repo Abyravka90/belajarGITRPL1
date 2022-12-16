@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form name="ffrom"> 
+        <input type="text"name="tinggi"placeholder="Masukan Tinggi"> 
+        <input type="text"name="jari"placeholder="Masukan R"> 
+        <input type="button"value="Oke"onclick="volumetabung()"> 
+        <input type="reset"value="reset">
+    </form>
+    
+    <script>
+        function volumetabung() { 
+            var v=3.14; 
+            var r=parseFloat(document.ffrom.jari.value);
+            var t=parseFloat(document.ffrom.tinggi.value); 
+            var jumlah=r*r; var jumlah1=jumlah*t; 
+            var jumlah2=jumlah1*v; 
+            alert("Volumenya adalah "+jumlah2); } 
+    </script>
+
+
+</body>
+</html>
