@@ -1,0 +1,15 @@
+<script>
+    function birthOfCanal(year, month, day)
+{
+    var namaHari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu']
+    var d = new Date(year, month, day)
+    var day = d.getDay();
+    return namaHari[day];
+}
+var y = prompt('Masukan tahun lahir kamu')
+var m = prompt('Masukan bulan lahir kamu')
+var d = prompt("masukan tanggal lahir kamu")
+var dDay = birthOfCanal(y,(m-1), d)
+console.log(dDay)
+alert("hari lahir " +dDay)
+</script>

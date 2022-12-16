@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+        #container {
+            width:500px;
+            height:500px;
+            background:rgb(9, 45, 224);
+            border-radius: 90px;
+            position: relative;
+        }
+        #box {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: rgb(122, 254, 27);
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box">    
+        </div>
+    </div>
+    <script>      
+      var box = document.getElementById("box");
+        var pos = 0;
+        var posTop = 0;
+        var posRight = 0;
+        var posBottom = 0;
+        function move(){
+            if(pos < 350){
+                pos += 10
+                box.style.left = pos+'px';
+            }else if(pos >= 350 && posTop < 350)
+            {
+                posTop += 10
+                box.style.top = posTop+'px';
+            }else if(pos >= 350 && posTop <= 350 && posRight <= 340){
+                posRight += 10
+                box.style.left = (pos - posRight)+'px';
+            }else if(pos >= 350 && posBottom<=340){
+                posBottom += 10
+                box.style.top = (posTop - posBottom)+'px';
+            }else{
+                clearInterval();
+                pos = 0
+                posRight = 0
+                posBottom = 0
+                posTop = 0
+            }
+            setTimeout(function(){
+            }, 400)
+        }
+       setInterval(move,50)
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EVENT LISTENER</title>
+</head>
+<body>
+    <button id="demo">
+        start 
+    </button>
+    <button id="demo2">
+        hasil 
+    </button>
+    </body>
+    <script>
+        //rumus limas persegi
+        var p = prompt('masukan nilai panjang', '');
+        var l = prompt('masukan nilai lebar', '');
+        var t = prompt('masukan nilai tinggi', '');
+        var luas = (p*l*t/3); 
+        window.onload =     
+        function (){
+            var btn = document.getElementById('demo2');
+            btn.addEventListener("click", myfunction);
+
+            function myfunction(){
+            alert (luas);
+            btn.removeEventListener("click", myfunction);    
+            }
+        }
+    </script>
