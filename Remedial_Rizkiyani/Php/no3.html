@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 9</title>
+</head>
+<body>
+    <button id="demo">Hitung</button>
+
+    <script>
+        alert("Luas Persegi Panjang");
+        var p = prompt("Masukkan Panjang");
+        var l = prompt("Masukkan Lebar");
+
+      window.onload = function () {
+
+        var btn = document.getElementById("demo");
+        btn.addEventListener("click", myFunction);
+      };
+
+      function myFunction() {
+        var hasil = alert(p * l);
+        btn.removeEventListener("click", myFunction);
+        return hasil;
+      }
+    </script>
+</body>
+</html>
